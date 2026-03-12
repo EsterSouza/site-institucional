@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { Suspense } from "react";
 import { Shield, ArrowRight, ChevronRight, BookOpen } from "lucide-react";
 import CursosFiltro from "./CursosFiltro";
 import { client } from "@/sanity/lib/client";
@@ -129,7 +130,15 @@ export default async function CursosPage() {
             </section>
 
             {/* Cursos com filtro interativo (Client Component) */}
-            <CursosFiltro cursos={cursos} />
+            <div className="min-h-[400px]">
+                <Suspense fallback={
+                    <div className="flex items-center justify-center py-20">
+                        <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-brand-accent"></div>
+                    </div>
+                }>
+                    <CursosFiltro cursos={cursos} />
+                </Suspense>
+            </div>
 
             {/* CTA Final */}
             <section className="py-16 px-6 md:px-12 pb-24 bg-white">
