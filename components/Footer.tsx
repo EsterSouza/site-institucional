@@ -16,6 +16,7 @@ const footerLinks = [
             { href: "/#quem-somos", label: "Quem Somos" },
             { href: "/#comunidade", label: "Comunidade" },
             { href: "/contato", label: "Contato" },
+            { href: "/politica-de-privacidade", label: "Política de Privacidade" },
         ],
     },
 ];
