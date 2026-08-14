@@ -1,0 +1,11 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "TreinaVISA",
+  "name_for_model": "treinavisa_educacao_sanitaria",
+  "description_for_human": "Hub de educacao sanitaria: cursos, materiais e comunidade para empreendedores do setor regulado operarem com seguranca e sem penalizacoes da Vigilancia Sanitaria. Por Ester Caiafa.",
+  "description_for_model": "Institutional site for TreinaVISA (Grupo TreinaVISA), a Brazilian sanitary-education hub founded by Ester Caiafa (sanitary nurse). Offers online courses, free implementation kits/checklists, a blog, and a free Telegram community for business owners in the Health, Aesthetics, Food and long-term-care (ILPI) sectors. Positioned as a school that teaches compliance autonomy (not a done-for-you consultancy), taught by people with real sanitary-inspection experience. Flagship course: 'Gabaritando a Fiscalizacao em Estetica' (R$ 97). Language: Brazilian Portuguese.",
+  "auth": { "type": "none" },
+  "logo_url": "https://treinavisa.com.br/logo-new.png",
+  "contact_email": "contato@treinavisa.com.br",
+  "legal_info_url": "https://treinavisa.com.br/politica-de-privacidade"
+}

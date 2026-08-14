@@ -75,6 +75,10 @@ export const metadata: Metadata = {
         apple: "/favicon claro.png",
     },
     category: "education",
+    other: {
+        "llms:description":
+            "TreinaVISA — hub de educacao sanitaria (cursos, materiais e comunidade) para empreendedores dos setores Saude, Estetica, Alimentos e ILPI operarem em conformidade com a Vigilancia Sanitaria. Por Ester Caiafa.",
+    },
 };
 
 const jsonLd = {
