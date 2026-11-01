@@ -120,7 +120,7 @@ p { margin: 0; }
 .topo-in { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 64px; }
 .topo-logo img { height: 34px; width: auto; }
 .topo-menu { display: none; }
-.topo-menu a { text-decoration: none; font-weight: 600; font-size: 15.5px; color: var(--navy); padding: 8px 4px; }
+.topo-menu a:not(.btn) { text-decoration: none; font-weight: 600; font-size: 15.5px; color: var(--navy); padding: 8px 4px; }
 .topo-mobile summary {
     list-style: none;
     cursor: pointer;
@@ -144,7 +144,7 @@ p { margin: 0; }
     display: grid;
     padding: 8px max(16px, env(safe-area-inset-left, 0px)) 16px;
 }
-.topo-mobile nav a { padding: 14px 0; border-bottom: 1px solid var(--fundo); text-decoration: none; font-weight: 600; font-size: 17px; }
+.topo-mobile nav a:not(.btn) { padding: 14px 0; border-bottom: 1px solid var(--fundo); text-decoration: none; font-weight: 600; font-size: 17px; }
 .topo-mobile nav .btn { margin-top: 12px; }
 @media (min-width: 960px) {
     .topo-in { min-height: 76px; }
@@ -189,7 +189,7 @@ p { margin: 0; }
     overflow: hidden;
     display: grid;
 }
-.live-foto { position: relative; aspect-ratio: 4 / 3; background: #0f2a52; }
+.live-foto { position: relative; aspect-ratio: 3 / 2; background: #0f2a52; }
 .live-foto img { width: 100%; height: 100%; object-fit: cover; object-position: center 20%; }
 .live-selo {
     position: absolute;
