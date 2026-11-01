@@ -49,7 +49,7 @@ export const hialuronidaseNaEstetica: Artigo = {
             "O fluxo de remoção tem SAMU, contrato de retaguarda e encaminhamento imediato para emergência oftalmológica se houver alteração visual?",
         ] },
         { tipo: "p", texto: "Comece pelo protocolo de anafilaxia: adrenalina disponível, profissional habilitado para aplicá-la e acionamento imediato do socorro são o que conta nos primeiros minutos." },
-        { tipo: "cta", texto: "O POP de hialuronidase está na Pasta Sanitária POPs e Fichas para Estética.", rotulo: "Conhecer a pasta", href: "https://estetica.consultorasanitaria.com.br" },
+        { tipo: "cta", texto: "Tenha um POP de hialuronidase personalizado para a sua clínica, escrito para a rotina e a equipe dela, com a Pasta Sanitária Personalizada.", rotulo: "Conheça a pasta personalizada", href: "https://pasta-sanitaria.consultorasanitaria.com.br" },
     ],
     fonte: "E-book Hialuronidase na estética, TreinaVISA, 2026.",
 };
