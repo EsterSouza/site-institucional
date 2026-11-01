@@ -4,7 +4,7 @@ import { ShieldCheck, Trash2 } from "lucide-react";
 export const metadata: Metadata = {
     title: "Política de Privacidade",
     description:
-        "Entenda como a TreinaVISA trata dados pessoais, incluindo atendimentos realizados pelo Instagram Direct.",
+        "Entenda como o TreinaVISA trata dados pessoais, incluindo atendimentos realizados pelo Instagram Direct.",
     alternates: {
         canonical: "/politica-de-privacidade",
     },
@@ -14,13 +14,13 @@ const sectionClassName = "scroll-mt-24";
 
 export default function PoliticaDePrivacidadePage() {
     return (
-        <div className="bg-bg-primary pt-[72px]">
+        <div className="bg-background">
             <section className="bg-brand-navy px-6 py-16 text-white md:px-12 md:py-20">
                 <div className="mx-auto max-w-4xl">
                     <span className="mb-4 block font-mono text-xs font-bold uppercase tracking-widest text-brand-accent">
                         Transparência e privacidade
                     </span>
-                    <h1 className="font-serif text-4xl italic text-white md:text-6xl">
+                    <h1 className="font-serif text-4xl text-white md:text-6xl">
                         Política de <span className="font-sans font-bold not-italic">Privacidade</span>
                     </h1>
                     <p className="mt-6 max-w-2xl text-base leading-relaxed text-white/70 md:text-lg">
@@ -37,7 +37,7 @@ export default function PoliticaDePrivacidadePage() {
                     <div className="flex gap-4">
                         <ShieldCheck className="mt-0.5 h-6 w-6 shrink-0 text-brand-accent" aria-hidden="true" />
                         <p className="text-sm leading-relaxed md:text-base">
-                            Esta política explica o tratamento de dados pessoais pela TreinaVISA, em conformidade com a Lei nº 13.709/2018 (Lei Geral de Proteção de Dados Pessoais — LGPD).
+                            Esta política explica o tratamento de dados pessoais pelo TreinaVISA, em conformidade com a Lei nº 13.709/2018 (Lei Geral de Proteção de Dados Pessoais — LGPD).
                         </p>
                     </div>
                 </div>
@@ -68,7 +68,7 @@ export default function PoliticaDePrivacidadePage() {
 
                     <section className={sectionClassName}>
                         <h2 className="mb-4 font-sans text-2xl font-bold text-brand-navy">4. Compartilhamento de dados</h2>
-                        <p>Para viabilizar o atendimento, os dados podem ser processados pela plataforma Chatwoot, hospedada em servidor próprio da TreinaVISA, e pela infraestrutura da Meta Platforms, responsável pelo Instagram. Não vendemos dados pessoais e não os compartilhamos para fins publicitários.</p>
+                        <p>Para viabilizar o atendimento, os dados podem ser processados pela plataforma Chatwoot, hospedada em servidor próprio do TreinaVISA, e pela infraestrutura da Meta Platforms, responsável pelo Instagram. Não vendemos dados pessoais e não os compartilhamos para fins publicitários.</p>
                     </section>
 
                     <section className={sectionClassName}>

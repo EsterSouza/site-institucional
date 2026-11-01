@@ -1,11 +1,11 @@
 {
   "schema_version": "v1",
   "name_for_human": "TreinaVISA",
-  "name_for_model": "treinavisa_educacao_sanitaria",
-  "description_for_human": "Hub de educacao sanitaria: cursos, materiais e comunidade para empreendedores do setor regulado operarem com seguranca e sem penalizacoes da Vigilancia Sanitaria. Por Ester Caiafa.",
-  "description_for_model": "Institutional site for TreinaVISA (Grupo TreinaVISA), a Brazilian sanitary-education hub founded by Ester Caiafa (sanitary nurse). Offers online courses, free implementation kits/checklists, a blog, and a free Telegram community for business owners in the Health, Aesthetics, Food and long-term-care (ILPI) sectors. Positioned as a school that teaches compliance autonomy (not a done-for-you consultancy), taught by people with real sanitary-inspection experience. Flagship course: 'Gabaritando a Fiscalizacao em Estetica' (R$ 97). Language: Brazilian Portuguese.",
+  "name_for_model": "treinavisa",
+  "description_for_human": "Soluções sanitárias por tipo de negócio: aulas, pastas prontas, vistorias e consultoria para alimentação, estética e beleza, saúde e ILPI.",
+  "description_for_model": "Institutional site for TreinaVISA, a Brazilian sanitary hub founded by Ester Caiafa (sanitary nurse). It combines education and services: live classes and courses, ready-made sanitary document folders, inspections (vistoria), personalized folders and consulting, organized by business type (food service, aesthetics and beauty, health clinics, long-term care for the elderly/ILPI). Services are delivered by Consultora Sanitária (Ester Caiafa, www.consultorasanitaria.com.br) and nutritionist Ana Roberta Ribeiro (food service). Partner: Rosalia Cova, nutritionist with more than 20 years of sanitary inspection experience. Full summary at https://www.treinavisa.com.br/llms.txt. Language: Brazilian Portuguese.",
   "auth": { "type": "none" },
-  "logo_url": "https://treinavisa.com.br/logo-new.png",
+  "logo_url": "https://www.treinavisa.com.br/logo-azul.png",
   "contact_email": "contato@treinavisa.com.br",
-  "legal_info_url": "https://treinavisa.com.br/politica-de-privacidade"
+  "legal_info_url": "https://www.treinavisa.com.br/politica-de-privacidade"
 }

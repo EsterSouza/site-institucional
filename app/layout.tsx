@@ -1,72 +1,54 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display, JetBrains_Mono } from "next/font/google";
+import { Sora, Source_Sans_3 } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
-const playfair = Playfair_Display({
-    subsets: ["latin"],
-    style: ["italic", "normal"],
-    variable: "--font-serif",
-});
-const jbMono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono" });
+const sora = Sora({ subsets: ["latin"], weight: ["600", "700"], variable: "--font-titulo" });
+const sourceSans = Source_Sans_3({ subsets: ["latin"], variable: "--font-sans" });
 
-const BASE_URL = "https://treinavisa.com.br";
+const BASE_URL = "https://www.treinavisa.com.br";
+const DESCRICAO =
+    "Cursos, pastas prontas, vistorias e consultoria sanitária para alimentação, estética e beleza, saúde e ILPI. Soluções sanitárias com quem já esteve do outro lado.";
 
 export const metadata: Metadata = {
     metadataBase: new URL(BASE_URL),
     title: {
-        default: "TreinaVISA — Seu Hub de Educação Sanitária",
+        default: "TreinaVISA · Soluções sanitárias por tipo de negócio",
         template: "%s | TreinaVISA",
     },
-    description:
-        "TreinaVISA é o hub de educação sanitária para empreendedores do setor regulado. Cursos, materiais e comunidade para você operar com segurança e sem penalizações da Vigilância Sanitária.",
+    description: DESCRICAO,
     keywords: [
-        "educação sanitária",
-        "vigilância sanitária cursos",
-        "ANVISA treinamento",
-        "boas práticas sanitárias",
-        "gestão sanitária clínica estética",
-        "cursos vigilância sanitária online",
-        "treinamento ANVISA empresários",
-        "conformidade sanitária",
+        "vigilância sanitária",
+        "pasta sanitária",
+        "boas práticas de manipulação",
+        "consultoria sanitária",
+        "vistoria sanitária",
+        "curso vigilância sanitária",
+        "ILPI",
+        "clínica de estética",
         "TreinaVISA",
-        "Ester Caiafa",
     ],
-    authors: [{ name: "Ester Caiafa", url: "https://instagram.com/treinavisa" }],
+    authors: [{ name: "Ester Caiafa", url: "https://www.consultorasanitaria.com.br" }],
     creator: "TreinaVISA",
-    publisher: "Grupo TreinaVISA",
+    publisher: "TreinaVISA",
     robots: {
         index: true,
         follow: true,
-        googleBot: {
-            index: true,
-            follow: true,
-            "max-image-preview": "large",
-            "max-snippet": -1,
-        },
+        googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1 },
     },
     openGraph: {
         type: "website",
         locale: "pt_BR",
         url: BASE_URL,
         siteName: "TreinaVISA",
-        title: "TreinaVISA — Seu Hub de Educação Sanitária",
-        description:
-            "Cursos, e-books e comunidade para empreendedores do setor regulado operarem com segurança e conformidade sanitária.",
-        images: [
-            {
-                url: "/og-image.png",
-                width: 1200,
-                height: 630,
-                alt: "TreinaVISA — Hub de Educação Sanitária",
-            },
-        ],
+        title: "TreinaVISA · Soluções sanitárias por tipo de negócio",
+        description: DESCRICAO,
+        images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "TreinaVISA" }],
     },
     twitter: {
         card: "summary_large_image",
-        title: "TreinaVISA — Seu Hub de Educação Sanitária",
-        description: "Cursos e materiais de educação sanitária para empreendedores do setor regulado.",
+        title: "TreinaVISA · Soluções sanitárias por tipo de negócio",
+        description: DESCRICAO,
         images: ["/og-image.png"],
     },
     icons: {
@@ -74,39 +56,32 @@ export const metadata: Metadata = {
         shortcut: "/favicon claro.png",
         apple: "/favicon claro.png",
     },
-    category: "education",
     other: {
         "llms:description":
-            "TreinaVISA — hub de educacao sanitaria (cursos, materiais e comunidade) para empreendedores dos setores Saude, Estetica, Alimentos e ILPI operarem em conformidade com a Vigilancia Sanitaria. Por Ester Caiafa.",
+            "TreinaVISA: hub sanitário que reúne cursos, pastas prontas e serviços (vistoria, pasta personalizada e consultoria) para alimentação, estética e beleza, saúde e ILPI. Leva aos serviços da Consultora Sanitária (Ester Caiafa) e da nutricionista Ana Roberta.",
     },
 };
 
 const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "EducationalOrganization",
+    "@type": "Organization",
     name: "TreinaVISA",
-    description:
-        "Hub de Educação Sanitária para empreendedores do setor regulado. Cursos online e presenciais, materiais e comunidade.",
+    description: DESCRICAO,
     url: BASE_URL,
-    logo: `${BASE_URL}/logo-new.png`,
+    logo: `${BASE_URL}/logo-azul.png`,
     sameAs: ["https://instagram.com/treinavisa"],
+    email: "contato@treinavisa.com.br",
+    telephone: "+55-21-99053-0863",
     founder: {
         "@type": "Person",
         name: "Ester Caiafa",
-        jobTitle: "Enfermeira Sanitarista e Especialista em Vigilância Sanitária",
-        sameAs: "https://instagram.com/treinavisa",
+        jobTitle: "Enfermeira sanitarista, especialista em Vigilância Sanitária",
+        url: "https://www.consultorasanitaria.com.br",
     },
-    address: {
-        "@type": "PostalAddress",
-        addressCountry: "BR",
-    },
+    address: { "@type": "PostalAddress", addressLocality: "Rio de Janeiro", addressRegion: "RJ", addressCountry: "BR" },
 };
 
-export default function RootLayout({
-    children,
-}: {
-    children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
         <html lang="pt-BR">
             <head>
@@ -124,10 +99,10 @@ export default function RootLayout({
                     })(window, document, "clarity", "script", "y109t0glph");`}
                 </Script>
             </head>
-            <body
-                className={`${inter.variable} ${playfair.variable} ${jbMono.variable} font-sans bg-background text-text-primary antialiased`}
-            >
+            <body className={`${sora.variable} ${sourceSans.variable}`}>
                 {children}
+                {/* Faixa da Black Friday, a mesma contagem do site da Consultora. */}
+                <Script src="/bf26.js" strategy="afterInteractive" data-sem-link="" />
             </body>
         </html>
     );

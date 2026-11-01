@@ -1,69 +1,95 @@
-# TreinaVISA — Hub de Educacao Sanitaria
+# TreinaVISA
 
-> Educacao sanitaria para empreendedores do setor regulado: cursos, materiais
-> praticos e comunidade para operar com seguranca e sem penalizacoes da
-> Vigilancia Sanitaria. "Uma escola, nao uma consultoria" — ensinado por quem ja
-> esteve do outro lado da fiscalizacao. Fundado por Ester Caiafa, Enfermeira
-> Sanitarista.
+> Hub sanitário para quem tem negócio de alimentação, estética e beleza, saúde
+> ou ILPI no Brasil. Reúne aulas, pastas prontas e serviços sanitários
+> (vistoria, pasta personalizada e consultoria) e leva cada pessoa ao
+> profissional certo para o seu tipo de negócio. Lema: "Soluções sanitárias com
+> quem já esteve do outro lado." Fundado por Ester Caiafa, enfermeira
+> sanitarista.
 
-## O que e
+## O que é
 
-TreinaVISA e o hub educacional (Grupo TreinaVISA) que traduz a legislacao
-sanitaria em processos simples e seguros para donos e equipes de negocios nos
-setores de Saude, Estetica, Alimentos e ILPI. O foco e capacitacao tecnica para o
-proprio cliente ter autonomia na conformidade — nao um servico "feito por voce".
+O TreinaVISA começou como escola de educação sanitária e hoje engloba educação
+e serviços. O site é organizado por tipo de negócio. Em cada um há três
+caminhos: aprender (aulas e cursos), aplicar (pastas e materiais prontos) e
+contratar (serviço feito com o cliente). Os serviços são prestados pela
+Consultora Sanitária, de Ester Caiafa, e pela nutricionista Ana Roberta Ribeiro.
 
-## Ecossistema (3 pilares)
+## Tipos de negócio
 
-- Formacoes & Capacitacao Tecnica — cursos online diretos ao ponto, baseados em
-  experiencia real de fiscalizacao.
-- Kits de Implementacao — checklists e manuais gratuitos, prontos para imprimir.
-- Networking & Novidades — comunidade gratuita no Telegram com atualizacoes sobre
-  mudancas nas normas.
+- Alimentação (restaurantes, padarias, confeitarias, cozinhas industriais,
+  buffets): https://www.treinavisa.com.br/alimentacao
+- Estética e beleza (clínicas de estética, salões, manicures, nail designers):
+  https://www.treinavisa.com.br/estetica-e-beleza
+- Saúde (clínicas e consultórios): https://www.treinavisa.com.br/saude
+- ILPI (instituições de longa permanência para idosos):
+  https://www.treinavisa.com.br/ilpi
 
-## Cursos
+## Aulas
 
-- Gabaritando a Fiscalizacao em Estetica — Masterclass online (Saude/Estetica),
-  inscricoes abertas. R$ 97,00 a vista ou 12x R$ 9,68. Domine os 25 itens criticos
-  do roteiro oficial da ANVISA para clinicas de estetica.
-  Pagina: https://masterclass-gabaritando-estetica.vercel.app
-- Imersao em Boas Praticas para Manipuladores de Alimentos — online (RDC 216/04 e
-  legislacoes estaduais). Em breve.
-- Boas Praticas de Funcionamento para ILPI — online. Em breve.
+- Live "Festas de fim de ano na cozinha", com Rosalia Cova. Terça, 01/12/2026,
+  das 14h às 17h (Brasília), online. Ingresso R$ 47, com certificado de 3 horas,
+  e-book da aula e grupo VIP. Replay vendido à parte.
+  https://live-festas.treinavisa.com.br
+- Imersão em Boas Práticas de Manipulação de Alimentos, com a nutricionista Ana
+  Roberta. R$ 97. https://pay.cakto.com.br/3aiebbp
+- A Masterclass "Gabaritando a fiscalização em estética" foi encerrada.
 
-Segmentos: Saude, ILPI, Alimentos, Beleza.
+## Pastas e materiais prontos
 
-## Materiais e comunidade
+- Kit Pasta Sanitária para Serviços de Alimentação (54 documentos), R$ 47,99:
+  https://lp-pasta-alimentos.consultorasanitaria.com.br
+- Kit Pasta Sanitária para Padaria, Confeitaria e Boleria (112 documentos),
+  R$ 97: https://lp-padaria.consultorasanitaria.com.br
+- Pasta Sanitária POPs e Fichas para Estética (142 documentos), R$ 39,97:
+  https://estetica.consultorasanitaria.com.br
+- Pasta Sanitária para Manicure, Pedicure e Nail Design, R$ 97:
+  https://manicure.consultorasanitaria.com.br
+- Biblioteca de Revestimentos para Clínicas e Consultórios, R$ 97:
+  https://revestimentos.consultorasanitaria.com.br
+- Pasta Sanitária Básica para ILPI, R$ 67:
+  https://lp-pasta-ilpi.consultorasanitaria.com.br
 
-- Checklists e Manuais Gratis — materiais de apoio para download (biblioteca em
-  expansao).
-- Blog — artigos gratuitos sobre vigilancia sanitaria, ANVISA e boas praticas:
-  https://treinavisa.com.br/blog
-- Comunidade TreinaVISA — entrada gratuita no Telegram: https://t.me/treinavisa
-- Garantia de 7 dias nos produtos pagos.
+## Serviços
+
+- Consultora Sanitária (Ester Caiafa), para saúde, estética e beleza e ILPI:
+  https://www.consultorasanitaria.com.br
+  - Pasta Sanitária Personalizada, a partir de R$ 597:
+    https://pasta-sanitaria.consultorasanitaria.com.br
+  - Vistoria + Plano de Ação, R$ 997 online ou R$ 1.297 presencial (RJ):
+    https://vistoria.consultorasanitaria.com.br
+  - Consultoria 360º, acompanhamento anual:
+    https://www.consultorasanitaria.com.br/consultoria-360
+- Consultoria de alimentos (nutricionista Ana Roberta Ribeiro):
+  https://institucional-ana.consultorasanitaria.com.br
+  - Pasta Sanitária Personalizada para Alimentação, a partir de R$ 497:
+    https://pasta-personalizada-alimentos.consultorasanitaria.com.br
+  - Vistoria + Plano de Ação para alimentação, R$ 997 online ou R$ 1.297
+    presencial: https://lp-vistoria-restaurante.consultorasanitaria.com.br
+
+Preços conferidos em 01/11/2026.
 
 ## Equipe
 
-- Ester Caiafa — Fundadora. Enfermeira Sanitarista e Especialista em Vigilancia
-  Sanitaria (IVISA-RIO). Lider do HUB TreinaVISA.
-- Ana Roberta Ribeiro — Nutricionista, especialista em Gerontologia e Vigilancia
-  Sanitaria.
+- Ester Caiafa: fundadora. Enfermeira sanitarista, especialista em Vigilância
+  Sanitária pelo IVISA-Rio e pós-graduanda em Gestão de Clínicas.
+- Ana Roberta Ribeiro: nutricionista, especialista em Gerontologia e em
+  Vigilância Sanitária.
+- Rosalia Cova: parceira. Nutricionista formada há 35 anos, com mais de 20 anos
+  de fiscalização no IVISA-Rio.
 
-## Paginas principais
+## Blog
 
-- Home: https://treinavisa.com.br/
-- Cursos: https://treinavisa.com.br/cursos
-- Blog: https://treinavisa.com.br/blog
-- Politica de Privacidade: https://treinavisa.com.br/politica-de-privacidade
+- https://www.treinavisa.com.br/blog
+- Hialuronidase na estética: registro, estoque e protocolo na clínica:
+  https://www.treinavisa.com.br/blog/hialuronidase-na-estetica
 
 ## Contato
 
-- Site: https://treinavisa.com.br
+- Site: https://www.treinavisa.com.br
+- WhatsApp: (21) 99053-0863, https://wa.me/5521990530863
 - E-mail: contato@treinavisa.com.br
-- WhatsApp: https://wa.me/5521993397315
 - Instagram: https://instagram.com/treinavisa
-- Telegram: https://t.me/treinavisa
-- Empresa: Grupo TreinaVISA — 53.297.694 Ester Souza da Silva
+- Grupo VIP no WhatsApp: https://chat.whatsapp.com/FQ51he8Xo8x5BoVBTbl1zV
 - CNPJ: 53.297.694/0001-37
-- Endereco: Av. Embaixador Abelardo Bueno, 1 (Ed. Lagoa / Dimension Office Park),
-  Barra Olimpica / Jacarepagua, Rio de Janeiro - RJ, CEP 22775-040, Brasil
+- Rio de Janeiro, RJ, Brasil
