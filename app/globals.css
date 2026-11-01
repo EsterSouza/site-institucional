@@ -306,6 +306,8 @@ p { margin: 0; }
 .item .btn { margin-top: 4px; justify-self: start; }
 .item-selo { justify-self: start; background: #0e0b0c; color: #fff; font-weight: 800; font-size: 12px; letter-spacing: 0.06em; padding: 4px 9px; border-radius: 4px; }
 .item-selo b { color: #ff5a60; }
+.item-black { display: grid; gap: 4px; justify-items: start; font-size: 15.5px; }
+.item-black a { color: var(--azul); font-weight: 700; min-height: 44px; display: inline-flex; align-items: center; }
 @media (min-width: 700px) { .itens { grid-template-columns: 1fr 1fr; } }
 @media (min-width: 1100px) { .itens.tres { grid-template-columns: repeat(3, 1fr); } }
 

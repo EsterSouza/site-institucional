@@ -1,12 +1,10 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { CYBER, FIM, INICIO } from "@/content/black";
 import { whatsapp } from "@/content/site";
+import { useAgora } from "./useAgora";
 
-// Mesmas datas do bf26.js da Consultora. Nome e oferta de cada surpresa só aparecem quando ela abre.
-const INICIO = +new Date("2026-11-03T00:00:00-03:00");
-const CYBER = +new Date("2026-11-30T00:00:00-03:00");
-const FIM = +new Date("2026-11-30T23:59:59-03:00");
+// Nome e oferta de cada surpresa só aparecem quando ela abre.
 const CALENDARIO = [
     { dia: "03/11", abre: INICIO, nome: "Pastas prontas", oferta: "30% OFF" },
     { dia: "11/11", abre: +new Date("2026-11-11T00:00:00-03:00"), nome: "Vistorias e pastas personalizadas", oferta: "30% OFF" },
@@ -15,25 +13,13 @@ const CALENDARIO = [
 ];
 
 const AVISO = whatsapp("Olá! Quero receber as surpresas da Black Friday do TreinaVISA assim que abrirem.");
-const IMERSAO = whatsapp("Olá! Quero saber da Black Friday da Imersão em Boas Práticas de Manipulação.");
+const IMERSAO_ANTES = whatsapp("Olá! Quero saber da Black Friday da Imersão em Boas Práticas de Manipulação.");
+const IMERSAO_CUPOM = whatsapp("Olá! Quero o cupom da Black Friday da Imersão em Boas Práticas de Manipulação.");
 
-function agoraTeste() {
-    // ?bf=2026-11-03T10:00 no endereço simula outro dia, como no bf26.js.
-    const t = new URLSearchParams(location.search).get("bf");
-    const t0 = t ? +new Date(t.length <= 16 ? `${t}:00-03:00` : t) : NaN;
-    return isNaN(t0) ? 0 : t0 - Date.now();
-}
 const z = (n: number) => String(n).padStart(2, "0");
 
 export default function VitrineBlack() {
-    const [t, setT] = useState<number | null>(null);
-    useEffect(() => {
-        const desvio = agoraTeste();
-        const tic = () => setT(Date.now() + desvio);
-        tic();
-        const id = setInterval(tic, 1000);
-        return () => clearInterval(id);
-    }, []);
+    const t = useAgora();
 
     if (t === null || t > FIM) return null;
 
@@ -94,12 +80,25 @@ export default function VitrineBlack() {
                 </div>
                 <div className="bf-lado">
                     <div className="bf-imersao">
-                        <span className="bf-selo">??? OFF</span>
-                        <h3>Imersão em Boas Práticas de Manipulação</h3>
-                        <p>A imersão da nutricionista Ana Roberta também entra na Black Friday.</p>
-                        <a className="btn bf-btn" href={IMERSAO} target="_blank" rel="noopener noreferrer">
-                            Quero saber o desconto
-                        </a>
+                        {t < INICIO ? (
+                            <>
+                                <span className="bf-selo">??? OFF</span>
+                                <h3>Imersão em Boas Práticas de Manipulação</h3>
+                                <p>A imersão da nutricionista Ana Roberta também entra na Black Friday.</p>
+                                <a className="btn bf-btn" href={IMERSAO_ANTES} target="_blank" rel="noopener noreferrer">
+                                    Quero saber o desconto
+                                </a>
+                            </>
+                        ) : (
+                            <>
+                                <span className="bf-selo">30% OFF</span>
+                                <h3>Imersão em Boas Práticas de Manipulação</h3>
+                                <p>Com a nutricionista Ana Roberta. De R$ 97 por <b>R$ 67,90</b> com o cupom.</p>
+                                <a className="btn bf-btn" href={IMERSAO_CUPOM} target="_blank" rel="noopener noreferrer">
+                                    Quero o cupom
+                                </a>
+                            </>
+                        )}
                     </div>
                     <div className="bf-aviso">
                         <h3>Quer saber antes de todo mundo?</h3>
