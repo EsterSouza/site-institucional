@@ -235,45 +235,8 @@ p { margin: 0; }
     .live-compra { grid-template-columns: auto auto; justify-content: start; align-items: center; gap: 24px; }
 }
 
-/* Vitrine da Black Friday: preto e vermelho só aqui, como no site da Consultora. */
-.bf { background: #0e0b0c; color: #fff; padding: 44px 0; }
-.bf-in { display: grid; gap: 24px; }
-.bf-selo { justify-self: start; background: #e3242b; color: #fff; font-weight: 800; font-size: 13px; letter-spacing: 0.08em; padding: 5px 11px; border-radius: 6px; }
-.bf h2 { font-size: 30px; color: #fff; margin-top: 12px; }
-.bf h2 em { font-style: normal; color: #e3242b; }
-.bf-rot { color: #d9cccf; margin-top: 14px; font-size: 15px; }
-.bf-relogio { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-top: 10px; }
-.bf-relogio div { background: #211a1c; border-radius: 10px; padding: 10px 0; text-align: center; }
-.bf-relogio b { display: block; font-family: var(--font-titulo), sans-serif; font-size: 30px; line-height: 1.1; }
-.bf-relogio span { font-size: 12px; color: #bfafb4; text-transform: uppercase; letter-spacing: 0.06em; }
-.bf-cal { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 16px; }
-.bf-dia { background: #211a1c; border: 1px solid #3a2e32; border-radius: 12px; padding: 14px; display: grid; gap: 6px; align-content: start; min-height: 128px; }
-.bf-dia .bf-data { font-size: 13px; color: #bfafb4; font-weight: 700; }
-.bf-dia b { font-size: 15.5px; line-height: 1.3; }
-.bf-dia em { justify-self: start; font-style: normal; font-weight: 800; font-size: 13px; padding: 4px 9px; border-radius: 6px; background: #3a2e32; }
-.bf-dia small { color: #bfafb4; font-size: 12.5px; }
-.bf-dia.vez { border-color: #e3242b; }
-.bf-dia.vez em, .bf-dia.aberta em { background: #e3242b; }
-.bf-lado { display: grid; gap: 12px; align-content: start; }
-.bf-imersao { background: #fff; color: var(--navy); border-radius: 12px; padding: 20px; display: grid; gap: 10px; }
-.bf-imersao .bf-selo { font-size: 12px; }
-.bf-imersao h3 { font-size: 21px; }
-.bf-imersao p { color: var(--mudo); font-size: 15.5px; }
-.bf-aviso { background: #1a1416; border: 1px solid #3a2e32; border-radius: 12px; padding: 20px; display: grid; gap: 10px; }
-.bf-aviso h3 { font-size: 19px; color: #fff; }
-.bf-aviso p { color: #d9cccf; font-size: 15px; }
-.bf-btn { background: #e3242b; color: #fff; }
-@media (prefers-reduced-motion: no-preference) {
-    .bf-dia.vez em { animation: bf-pulso 1.8s ease-in-out infinite; }
-}
-@keyframes bf-pulso { 50% { opacity: 0.6; } }
-@media (min-width: 900px) {
-    .bf { padding: 64px 0; }
-    .bf-in { grid-template-columns: 1.5fr 1fr; gap: 40px; }
-    .bf h2 { font-size: 42px; }
-    .bf-cal { grid-template-columns: repeat(4, 1fr); }
-    .bf-relogio b { font-size: 38px; }
-}
+/* Black November (bf26.js da Consultora): preto e vermelho só aqui; títulos na fonte do site. */
+.bf26-faixa, .bf26-bloco { --font-fraunces: var(--font-titulo); }
 
 /* Segmentos */
 .segs { display: grid; gap: 12px; }
@@ -304,10 +267,6 @@ p { margin: 0; }
 .item p { color: var(--mudo); font-size: 16px; }
 .item-preco { font-family: var(--font-titulo), sans-serif; font-weight: 700; font-size: 20px; color: var(--navy); }
 .item .btn { margin-top: 4px; justify-self: start; }
-.item-selo { justify-self: start; background: #0e0b0c; color: #fff; font-weight: 800; font-size: 12px; letter-spacing: 0.06em; padding: 4px 9px; border-radius: 4px; }
-.item-selo b { color: #ff5a60; }
-.item-black { display: grid; gap: 4px; justify-items: start; font-size: 15.5px; }
-.item-black a { color: var(--azul); font-weight: 700; min-height: 44px; display: inline-flex; align-items: center; }
 @media (min-width: 700px) { .itens { grid-template-columns: 1fr 1fr; } }
 @media (min-width: 1100px) { .itens.tres { grid-template-columns: repeat(3, 1fr); } }
 

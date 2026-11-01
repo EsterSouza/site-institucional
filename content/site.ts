@@ -76,7 +76,6 @@ export type Item = {
     preco?: string;
     link: string;
     botao: string;
-    black?: { oferta: string; preco: string };
 };
 
 export type Segmento = {
@@ -132,7 +131,6 @@ export const SEGMENTOS: Segmento[] = [
                 preco: "R$ 97",
                 link: "https://pay.cakto.com.br/3aiebbp",
                 botao: "Quero a imersão",
-                black: { oferta: "30% OFF", preco: "R$ 67,90" },
             },
         ],
         aplicar: [

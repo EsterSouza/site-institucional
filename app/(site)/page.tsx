@@ -1,6 +1,5 @@
 import Link from "next/link";
 import LiveDestaque from "@/components/LiveDestaque";
-import VitrineBlack from "@/components/VitrineBlack";
 import ItemCard from "@/components/ItemCard";
 import Contato from "@/components/Contato";
 import { EQUIPE, GRUPOS_VIP, SEGMENTOS, segmento } from "@/content/site";
@@ -34,7 +33,8 @@ export default function Home() {
                 </div>
             </section>
 
-            <VitrineBlack />
+            {/* Calendário da Black November, desenhado pelo bf26.js. */}
+            <div data-bf26-casa="" data-onda="vitrine" />
 
             <section className="secao" id="segmentos">
                 <div className="wrap">

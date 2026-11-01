@@ -101,8 +101,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </head>
             <body className={`${sora.variable} ${sourceSans.variable}`}>
                 {children}
-                {/* Faixa da Black Friday, a mesma contagem do site da Consultora. */}
-                <Script src="/bf26.js" strategy="afterInteractive" data-sem-link="" />
+                {/* Black November: o mesmo arquivo do site da Consultora. Carrega uma vez só, sem data-onda;
+                    cada página marca com data-bf26-casa onde o bloco entra. */}
+                <Script
+                    src="https://www.consultorasanitaria.com.br/bf26.js"
+                    strategy="afterInteractive"
+                    data-api="https://www.consultorasanitaria.com.br/api/black-friday"
+                />
             </body>
         </html>
     );
