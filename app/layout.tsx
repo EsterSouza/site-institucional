@@ -101,6 +101,24 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </head>
             <body className={`${sora.variable} ${sourceSans.variable}`}>
                 {children}
+                {/* Origem da visita (UTM, fbclid, gclid) guardada na aba e repassada no clique para o
+                    checkout da Cakto e para as páginas da Consultora, que levam adiante até a compra. */}
+                <Script id="origem" strategy="afterInteractive">
+                    {`(function(){
+                        var chave=/^(utm_|fbclid|gclid)/, o={};
+                        try{o=JSON.parse(sessionStorage.getItem("tv_origem")||"{}")}catch(e){}
+                        new URLSearchParams(location.search).forEach(function(v,k){if(chave.test(k))o[k]=v});
+                        try{sessionStorage.setItem("tv_origem",JSON.stringify(o))}catch(e){}
+                        document.addEventListener("click",function(e){
+                            var a=e.target.closest&&e.target.closest("a[href]"),u;
+                            if(!a)return;
+                            try{u=new URL(a.href)}catch(x){return}
+                            if(!/(^|\\.)(cakto|consultorasanitaria)\\.com\\.br$/.test(u.hostname))return;
+                            for(var k in o)if(!u.searchParams.has(k))u.searchParams.set(k,o[k]);
+                            a.href=u.toString();
+                        },true);
+                    })();`}
+                </Script>
                 {/* Black November: o mesmo arquivo do site da Consultora. Carrega uma vez só, sem data-onda;
                     cada página marca com data-bf26-casa onde o bloco entra. */}
                 <Script
