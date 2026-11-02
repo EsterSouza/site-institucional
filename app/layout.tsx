@@ -43,13 +43,13 @@ export const metadata: Metadata = {
         siteName: "TreinaVISA",
         title: "TreinaVISA · Soluções sanitárias por tipo de negócio",
         description: DESCRICAO,
-        images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "TreinaVISA" }],
+        images: [{ url: "/compartilhar-treinavisa.png", width: 1200, height: 630, alt: "TreinaVISA: soluções sanitárias com quem já esteve do outro lado" }],
     },
     twitter: {
         card: "summary_large_image",
         title: "TreinaVISA · Soluções sanitárias por tipo de negócio",
         description: DESCRICAO,
-        images: ["/og-image.png"],
+        images: ["/compartilhar-treinavisa.png"],
     },
     icons: {
         icon: "/favicon claro.png",
