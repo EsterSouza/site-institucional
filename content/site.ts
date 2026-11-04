@@ -161,7 +161,7 @@ export const SEGMENTOS: Segmento[] = [
                 nome: "Vistoria + Plano de Ação para alimentação",
                 detalhe: "Diagnóstico técnico da sua cozinha, com plano de ação priorizado.",
                 preco: "R$ 997 online · R$ 1.297 presencial",
-                link: "https://lp-vistoria-restaurante.consultorasanitaria.com.br",
+                link: "https://vistoria-alimentos.consultorasanitaria.com.br",
                 botao: "Ver a vistoria",
             },
             {
