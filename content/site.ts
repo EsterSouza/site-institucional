@@ -183,7 +183,7 @@ export const SEGMENTOS: Segmento[] = [
             {
                 nome: "Pasta Sanitária POPs e Fichas para Estética",
                 detalhe: "142 documentos: POPs por procedimento, fichas de anamnese e documentos base.",
-                preco: "R$ 39,97",
+                preco: "R$ 42,97",
                 link: "https://estetica.consultorasanitaria.com.br",
                 botao: "Ver a pasta",
             },
