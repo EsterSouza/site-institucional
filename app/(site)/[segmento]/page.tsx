@@ -40,6 +40,9 @@ export default function PaginaSegmento({ params }: { params: { segmento: string 
                     <p className="seg-quem">{s.quem}</p>
                 </div>
             </section>
+            {/* Black November da Imersão: a casa só diz a onda e o produto para a faixa do bf26
+                (o preço e o cupom já estão no cartão; data-preco-na-pagina na tag tira o formulário). */}
+            {s.slug === "alimentacao" && <div data-bf26-casa="" data-onda="nov11" data-pagina="imersao" />}
             <section className="secao">
                 <div className="wrap">
                     {grupos.map((g) => (
