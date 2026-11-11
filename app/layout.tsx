@@ -126,6 +126,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                     strategy="afterInteractive"
                     data-api="https://www.consultorasanitaria.com.br/api/black-friday"
                 />
+                {/* Rastreio da Cakto: guarda a campanha (UTM, sck, src, fbclid, gclid) e completa os links
+                    do checkout só com o que faltar. data-offer="-" é de propósito: falha na regra da Cakto
+                    e não conta visita, porque o site vende vários produtos e a visita cairia no errado. */}
+                <Script
+                    src="https://api.cakto.com.br/api/product/checkout/tracker.js"
+                    strategy="afterInteractive"
+                    data-offer="-"
+                />
             </body>
         </html>
     );
