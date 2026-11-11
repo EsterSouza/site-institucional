@@ -373,3 +373,9 @@ p { margin: 0; }
 @media (min-width: 900px) {
     .rodape-in { grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 40px; }
 }
+
+/* Black November: o <head> liga .bf-on até BF_FIM (content/site.ts); depois vale só o preço normal. */
+html:not(.bf-on) .so-bf, .bf-on .sem-bf { display: none !important; }
+.selo-bf { display: block; width: fit-content; margin-bottom: 4px; padding: 3px 8px; border-radius: var(--raio); background: var(--azul); color: #fff; font-size: 12.5px; letter-spacing: .04em; text-transform: uppercase; }
+.item-preco s { color: var(--mudo); font-weight: 600; }
+.item .nota-bf { font-size: 14.5px; }

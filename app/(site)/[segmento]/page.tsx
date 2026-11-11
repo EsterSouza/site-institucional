@@ -40,15 +40,6 @@ export default function PaginaSegmento({ params }: { params: { segmento: string 
                     <p className="seg-quem">{s.quem}</p>
                 </div>
             </section>
-            {/* Black November da imersão: o servidor só revela a oferta em 11/11. */}
-            {s.slug === "alimentacao" && (
-                <div
-                    data-bf26-casa=""
-                    data-onda="nov11"
-                    data-pagina="imersao"
-                    data-sem-desconto="https://pay.cakto.com.br/3aiebbp"
-                />
-            )}
             <section className="secao">
                 <div className="wrap">
                     {grupos.map((g) => (

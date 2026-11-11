@@ -10,6 +10,11 @@ export const CONTATO = {
     cnpj: "53.297.694/0001-37",
 };
 
+// Black November, onda de 11/11: até esta hora o <head> liga a classe bf-on e a página mostra o
+// preço com o cupom; depois volta sozinha ao preço normal, sem novo deploy.
+export const BF_FIM = "2026-12-01T00:00:00-03:00";
+export const BF_CUPOM = "PORTAL11";
+
 export function whatsapp(texto: string) {
     return `${CONTATO.whatsappLink}?text=${encodeURIComponent(texto)}`;
 }
@@ -74,6 +79,7 @@ export type Item = {
     nome: string;
     detalhe: string;
     preco?: string;
+    black?: string; // preço na Black November (até BF_FIM)
     link: string;
     botao: string;
 };
@@ -129,6 +135,7 @@ export const SEGMENTOS: Segmento[] = [
                 nome: "Imersão em Boas Práticas de Manipulação",
                 detalhe: "Curso online com a nutricionista Ana Roberta.",
                 preco: "R$ 97",
+                black: "R$ 67,90",
                 link: "https://pay.cakto.com.br/3aiebbp",
                 botao: "Quero a imersão",
             },
@@ -138,6 +145,7 @@ export const SEGMENTOS: Segmento[] = [
                 nome: "Kit Pasta Sanitária para Serviços de Alimentação",
                 detalhe: "54 documentos: Manual de Boas Práticas, POPs, planilhas e checklists.",
                 preco: "R$ 47,99",
+                black: "R$ 33,59",
                 link: "https://lp-pasta-alimentos.consultorasanitaria.com.br",
                 botao: "Ver o kit",
             },
@@ -145,6 +153,7 @@ export const SEGMENTOS: Segmento[] = [
                 nome: "Kit Pasta Sanitária para Padaria, Confeitaria e Boleria",
                 detalhe: "112 documentos para padaria, confeitaria e boleria.",
                 preco: "R$ 97",
+                black: "R$ 67,90",
                 link: "https://lp-padaria.consultorasanitaria.com.br",
                 botao: "Ver o kit",
             },
@@ -191,6 +200,7 @@ export const SEGMENTOS: Segmento[] = [
                 nome: "Pasta Sanitária para Manicure, Pedicure e Nail Design",
                 detalhe: "Pasta pronta para o atendimento de unhas.",
                 preco: "R$ 97",
+                black: "R$ 67,90",
                 link: "https://manicure.consultorasanitaria.com.br",
                 botao: "Ver a pasta",
             },
@@ -209,6 +219,7 @@ export const SEGMENTOS: Segmento[] = [
                 nome: "Biblioteca de Revestimentos para Clínicas e Consultórios",
                 detalhe: "Referência de revestimentos para a obra ou a reforma da clínica.",
                 preco: "R$ 97",
+                black: "R$ 67,90",
                 link: "https://revestimentos.consultorasanitaria.com.br",
                 botao: "Ver a biblioteca",
             },

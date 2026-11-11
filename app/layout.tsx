@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Sora, Source_Sans_3 } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
+import { BF_FIM } from "@/content/site";
 
 const sora = Sora({ subsets: ["latin"], weight: ["600", "700"], variable: "--font-titulo" });
 const sourceSans = Source_Sans_3({ subsets: ["latin"], variable: "--font-sans" });
@@ -83,8 +84,15 @@ const jsonLd = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
-        <html lang="pt-BR">
+        <html lang="pt-BR" suppressHydrationWarning>
             <head>
+                {/* Black November: liga a classe antes da pintura; depois de BF_FIM a página volta sozinha
+                    ao preço normal e aos links sem cupom. */}
+                <script
+                    dangerouslySetInnerHTML={{
+                        __html: `if(Date.now()<Date.parse("${BF_FIM}"))document.documentElement.classList.add("bf-on")`,
+                    }}
+                />
                 <Script
                     id="json-ld-org"
                     type="application/ld+json"
@@ -120,11 +128,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                     })();`}
                 </Script>
                 {/* Black November: o mesmo arquivo do site da Consultora. Carrega uma vez só, sem data-onda;
-                    cada página marca com data-bf26-casa onde o bloco entra. */}
+                    a home marca com data-bf26-casa onde entra o calendário. data-preco-na-pagina: os preços
+                    da Black e o cupom já estão nos cartões, então o bf26 não abre formulário nem desvia
+                    o clique do checkout. */}
                 <Script
                     src="https://www.consultorasanitaria.com.br/bf26.js"
                     strategy="afterInteractive"
                     data-api="https://www.consultorasanitaria.com.br/api/black-friday"
+                    data-preco-na-pagina=""
                 />
                 {/* Rastreio da Cakto: guarda a campanha (UTM, sck, src, fbclid, gclid) e completa os links
                     do checkout só com o que faltar. data-offer="-" é de propósito: falha na regra da Cakto
