@@ -1,8 +1,9 @@
 import type { Artigo } from "./tipos";
 import { hialuronidaseNaEstetica } from "./hialuronidase-na-estetica";
+import { lei15524Comentada } from "./lei-15524-comentada";
 
 // Mais novo primeiro.
-export const ARTIGOS: Artigo[] = [hialuronidaseNaEstetica];
+export const ARTIGOS: Artigo[] = [lei15524Comentada, hialuronidaseNaEstetica];
 
 export function artigo(slug: string) {
     return ARTIGOS.find((a) => a.slug === slug);
