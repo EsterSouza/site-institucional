@@ -130,11 +130,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 {/* Black November: o mesmo arquivo do site da Consultora. Carrega uma vez só, sem data-onda;
                     a home marca com data-bf26-casa onde entra o calendário. data-preco-na-pagina: os preços
                     da Black e o cupom já estão nos cartões, então o bf26 não abre formulário nem desvia
-                    o clique do checkout. */}
+                    o clique do checkout. data-pagina-bf: o "ver o calendário" da faixa leva à Black do próprio
+                    TreinaVISA (/black-friday), e não à da Consultora. */}
                 <Script
                     src="https://www.consultorasanitaria.com.br/bf26.js"
                     strategy="afterInteractive"
                     data-api="https://www.consultorasanitaria.com.br/api/black-friday"
+                    data-pagina-bf="/black-friday"
                     data-preco-na-pagina=""
                 />
                 {/* Rastreio da Cakto: guarda a campanha (UTM, sck, src, fbclid, gclid) e completa os links

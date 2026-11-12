@@ -379,3 +379,77 @@ html:not(.bf-on) .so-bf, .bf-on .sem-bf { display: none !important; }
 .selo-bf { display: block; width: fit-content; margin-bottom: 4px; padding: 3px 8px; border-radius: var(--raio); background: var(--azul); color: #fff; font-size: 12.5px; letter-spacing: .04em; text-transform: uppercase; }
 .item-preco s { color: var(--mudo); font-weight: 600; }
 .item .nota-bf { font-size: 14.5px; }
+
+/* Black November do TreinaVISA (/black-friday): azul-marinho da marca; o vermelho da campanha só
+   nos selos de oferta e o laranja de compra nas setas. */
+.bfn { background: var(--navy); color: #fff; }
+.bfn-abre { padding: 40px 0 32px; }
+.bfn-abre h1 { font-size: 36px; color: #fff; }
+.bfn-abre p { color: #c8d6ee; margin-top: 12px; font-size: 17px; }
+.bfn-abre p + p { margin-top: 10px; color: #fff; }
+.bfn-marcas { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-bottom: 4px; }
+/* Carimbo da área: para ninguém levar o de saúde querendo o de alimentos. */
+.bfn-carimbo {
+    display: inline-block;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 4px;
+    padding: 2px 8px;
+    font-size: 11.5px;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    transform: rotate(-3deg);
+}
+.bfn-carimbo-alimentos { border-color: var(--azul-claro); color: var(--azul-claro); }
+.bfn-proximas { display: grid; gap: 20px; align-content: start; }
+.bfn-proximas ul { list-style: none; margin: 0; padding: 0; }
+.bfn-proximas li { display: flex; gap: 16px; align-items: center; padding: 14px 0; border-bottom: 1px solid #1d3354; }
+.bfn-proximas li:first-child { border-top: 1px solid #1d3354; }
+.bfn-dica { font-size: 17px; font-weight: 600; line-height: 1.4; }
+.bfn-dia { font-family: var(--font-titulo), sans-serif; font-size: 26px; font-weight: 700; color: var(--azul-claro); flex: none; min-width: 74px; }
+.bfn-selo {
+    display: inline-block;
+    background: #e3242b;
+    color: #fff;
+    font-size: 12.5px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 4px;
+}
+.bfn-onda { border-top: 1px solid #1d3354; scroll-margin-top: 80px; }
+.bfn-grade { display: grid; gap: 20px; padding-top: 36px; padding-bottom: 36px; }
+.bfn-cabeca { display: grid; gap: 10px; align-content: start; justify-items: start; }
+.bfn-cabeca h2 { font-size: 30px; color: #fff; }
+.bfn-cabeca p { color: #c8d6ee; font-size: 16px; }
+.bfn-lista { list-style: none; margin: 0; padding: 0; }
+.bfn-lista li { border-bottom: 1px solid #1d3354; }
+.bfn-lista li:first-child { border-top: 1px solid #1d3354; }
+.bfn-lista a { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 64px; padding: 16px 0; text-decoration: none; color: #fff; }
+.bfn-item { display: grid; gap: 4px; justify-items: start; }
+.bfn-item strong { font-family: var(--font-titulo), sans-serif; font-size: 19px; line-height: 1.3; }
+.bfn-selo-item { font-size: 11.5px; }
+.bfn-quem { font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--azul-claro); }
+.bfn-nota { font-size: 15px; color: #c8d6ee; }
+.bfn-seta {
+    display: grid;
+    place-items: center;
+    flex: none;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--compra);
+    color: var(--navy);
+    font-size: 20px;
+    font-weight: 800;
+}
+@media (min-width: 900px) {
+    .bfn-abre { padding: 64px 0 48px; }
+    .bfn-abre h1 { font-size: 54px; }
+    .bfn-abre p { font-size: 19px; }
+    .bfn-grade { grid-template-columns: minmax(0, 0.8fr) minmax(0, 2fr); gap: 48px; padding-top: 64px; padding-bottom: 64px; }
+    .bfn-cabeca h2 { font-size: 42px; }
+    .bfn-item strong { font-size: 22px; }
+}

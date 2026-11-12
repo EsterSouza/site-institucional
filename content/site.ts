@@ -22,13 +22,15 @@ export function whatsapp(texto: string) {
 export const LIVE = {
     titulo: "Festas de fim de ano na cozinha",
     com: "Rosalia Cova",
-    quando: "Terça, 01/12, das 14h às 17h",
+    quando: "Terça, 01/12",
     inclui: "Live de 3 horas, certificado de 3h, e-book da aula e grupo VIP",
     preco: "R$ 47",
     link: "https://live-festas.treinavisa.com.br",
     fim: "2026-12-01T17:00:00-03:00",
     replayPreco: "R$ 47",
     replayLink: "https://pay.cakto.com.br/3fcqajs_1241984",
+    // Lote promocional: o replay sai por R$ 27 no checkout do ingresso até 15/11 (a LP vira em 16/11).
+    lote: { replay: "R$ 27", ate: "15/11", fim: "2026-11-15T23:59:59-03:00" },
 };
 
 export type Pessoa = {

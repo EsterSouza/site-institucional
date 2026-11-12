@@ -35,7 +35,6 @@ export default function LiveDestaque() {
                     <>
                         <div className="live-quando">
                             <span>Terça, 01/12</span>
-                            <span>14h às 17h</span>
                             <span>Ao vivo, online</span>
                         </div>
                         <ul className="conferido">
