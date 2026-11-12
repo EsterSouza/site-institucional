@@ -2,7 +2,7 @@ import Link from "next/link";
 import LiveDestaque from "@/components/LiveDestaque";
 import ItemCard from "@/components/ItemCard";
 import Contato from "@/components/Contato";
-import { EQUIPE, GRUPOS_VIP, SEGMENTOS, segmento } from "@/content/site";
+import { EQUIPE, SEGMENTOS, segmento } from "@/content/site";
 import { ARTIGOS, dataLonga } from "@/content/artigos";
 
 export default function Home() {
@@ -89,20 +89,6 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-
-            {GRUPOS_VIP.map((g) => (
-                <section key={g.link} className="vip">
-                    <div className="wrap vip-in">
-                        <div>
-                            <h2>{g.nome}</h2>
-                            <p>{g.texto}</p>
-                        </div>
-                        <a className="btn btn-zap btn-largo" href={g.link} target="_blank" rel="noopener noreferrer">
-                            Entrar no grupo
-                        </a>
-                    </div>
-                </section>
-            ))}
 
             {ultimo && (
                 <section className="secao">

@@ -290,16 +290,6 @@ p { margin: 0; }
     .pessoa img { width: 100%; height: auto; aspect-ratio: 4 / 5; }
 }
 
-/* Grupo VIP */
-.vip { background: var(--navy); color: #fff; padding: 40px 0; }
-.vip-in { display: grid; gap: 16px; }
-.vip h2 { color: #fff; font-size: 28px; }
-.vip p { color: #c8d6ee; margin-top: 8px; }
-@media (min-width: 900px) {
-    .vip-in { grid-template-columns: 1fr auto; align-items: center; gap: 40px; }
-    .vip h2 { font-size: 36px; }
-}
-
 /* Blog */
 .post { display: grid; gap: 10px; text-decoration: none; }
 .post h3 { font-size: 22px; }

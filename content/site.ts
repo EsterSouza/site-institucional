@@ -69,14 +69,6 @@ export const EQUIPE: Pessoa[] = [
     },
 ];
 
-export const GRUPOS_VIP = [
-    {
-        nome: "Grupo VIP do TreinaVISA",
-        texto: "Avisos de lives, aulas, materiais novos e ofertas, direto no WhatsApp.",
-        link: "https://chat.whatsapp.com/FQ51he8Xo8x5BoVBTbl1zV",
-    },
-];
-
 export type Item = {
     nome: string;
     detalhe: string;
